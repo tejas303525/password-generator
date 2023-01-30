@@ -12,5 +12,5 @@ res="".join(random.choice(string.ascii_letters) for i in range(n))
 for i in range(len(res)):
     if res not in d:
         d[name]=res
-with open("passwordgen.txt","w") as f:
+with open("passwordgen.txt","a") as f:
     f.write(json.dumps(d))
